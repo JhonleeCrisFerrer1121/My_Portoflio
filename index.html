@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Lee Cris Ferrer - Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ito ung navigation menu -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#goals">Goals</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <div class="portfolio-card">
+            
+            <!-- Section1 home -->
+            <div id="home" class="scroll-section text-center">
+                <h1 class="glow-text">Jhon Lee Cris Ferrer</h1>
+                <p class="tagline">"Nobody gets to decide who i am"</p>
+                
+                <!-- ung profile picture -->
+                <div class="profile-img-container">
+                    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                </div>
+                <p class="intro-text"> Welcome to my simple website, lets turn your ideas into reality. </p>
+            </div>
+
+            <hr> 
+
+            <!-- Section2 About me -->
+            <div id="about" class="scroll-section">
+                <h2>About Me</h2>
+                <div class="info-block">
+                    <p>🏫 <strong>School:</strong> datamex college of saint adeline </p>
+                    <p>🎓 <strong>Course:</strong> ACT-2-A </p>
+                </div>
+                <p class="bio-text">I am an aspiring arts and love cooking, quiet to the world, but loud to the people who matter, i dont change my personality i just reveal it to those who are worth my energy, focused on my own dream, but always match the vibe of my real circle. "</p>
+            </div>
+
+            <hr>
+
+            <!-- Section 3 my 5 skills -->
+            <div id="skills" class="scroll-section">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-badge">🎨 Drawing & Sketching</span>
+                    <span class="skill-badge">🍳 Culinary & Cooking</span>
+                    <span class="skill-badge">📐 Visual Designing</span>
+                    <span class="skill-badge">🎮 Gaming Strategies</span>
+                    <span class="skill-badge">🤝 Teamwork </span>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Section4 ung 3 projects -->
+            <div id="projects" class="scroll-section">
+                <h2>My Projects</h2>
+                <p class="section-desc"> A showcase of our recent design architectures: </p>
+                
+                <div class="projects-gallery">
+                    
+                    <!-- Project1 registration form -->
+                    <div class="project-item">
+                        <h3>Student Registration Form</h3>
+                        <div class="img-wrapper">
+                            <img src="project1.jpg" alt="Student Registration Form Interface">
+                        </div>
+                        <p class="project-desc">A simple fill up form for those who want to enroll or register at the school.</p>
+                        <p class="tech-used"><strong>Technologies used:</strong> HTML5 Forms, Structured Markup</p>
+                    </div>
+
+                    <!-- Project 2 login interface -->
+                    <div class="project-item">
+                        <h3>Simple login</h3>
+                        <div class="img-wrapper">
+                            <img src="project2.jpg" alt="Secure Account Login Portal">
+                        </div>
+                        <p class="project-desc">The project where i created a login box for username and password.</p>
+                        <p class="tech-used"><strong>Technologies used:</strong> CSS colors and basic styling </p>
+                    </div>
+
+                    <!-- Project3 ung parking system -->
+                    <div class="project-item">
+                        <h3>EasyPark system dashboard</h3>
+                        <div class="img-wrapper">
+                            <img src="project3.jpg" alt="EasyPark Admin Dashboard Monitor">
+                        </div>
+                        <p class="project-desc">Our group project showing vacant parking spaces.</p>
+                        <p class="tech-used"><strong>Technologies used:</strong> Microsoft VS2010</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Sections5 achievement -->
+            <div id="achievements" class="scroll-section text-left">
+                <h2>Achievements</h2>
+                <div class="list-container">
+                    <p class="list-item">🏆 Successfully completed 80 hours of Training OJT.</p>
+                    <p class="list-item">🏆 Perfect Attendance:> .</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Section6 goals -->
+            <div id="goals" class="scroll-section text-left">
+                <h2>Future Goals</h2>
+                <div class="list-container">
+                    <p class="list-item">🚀 to become a professional animator.</p>
+                    <p class="list-item">🚀 to be successful in life.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Section 7 ung contact me -->
+            <div id="contact" class="scroll-section">
+                <h2>Contact Me</h2>
+                
+                <div class="contact-layout">
+                    <!-- Left column ung links -->
+                    <div class="contact-details">
+                        <p>📧 <strong>Email:</strong> jhonleecrisferrer@gmail.com</p>
+                        <p>📍 <strong>Location:</strong> Quezon City, Philippines</p>
+                        <p class="social-title">🔗 <strong>Connect with me:</strong></p>
+                        <div class="social-box">
+                            <a href="https://facebook.com" target="_blank" class="social-btn">Facebook</a>
+                            <a href="https://instagram.com" target="_blank" class="social-btn">Instagram</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right column is ung contact form, galing AI dagdag angas lng pu:> -->
+                    <div class="form-container">
+                        <h3>Drop a Message</h3>
+                        <form class="interactive-form" onsubmit="alert('Message Sent successfully, bro!'); return false;">
+                            Name: <input type="text" name="name" placeholder="Enter your name" required>
+                            Email: <input type="email" name="email" placeholder="Enter your email" required>
+                            Message:
+                            <textarea name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

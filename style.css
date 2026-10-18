@@ -1,0 +1,305 @@
+/*  RELEVANT BACKGROUND, FONT SIZE, COHESIVE COLOR SCHEME */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); /* Elegant Dark Theme Background */
+    color: #f1f5f9;
+    padding-top: 80px;
+}
+
+/* PERSISTENT STYLISH NAVIGATION BAR */
+.navbar {
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(8px); /* Blur Glass Morphism */
+    padding: 16px;
+    border-bottom: 1px solid #334155;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: #94a3b8;
+    margin: 0 14px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation links */
+.nav-links a:hover {
+    color: #38bdf8; 
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+/* Main structure hover */
+.main-container {
+    display: flex; 
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* yung cnetral portfolio container card */
+.portfolio-card {
+    background-color: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 50px 40px;
+    border-radius: 20px; 
+    border: 1px solid #334155;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); 
+    max-width: 850px;
+    width: 100%;
+}
+
+/* Scroll top margin correction */
+.scroll-section {
+    scroll-margin-top: 100px;
+    padding: 25px 0;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+
+/* typograpy blocks */
+.glow-text {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #38bdf8;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    max-width: 620px;
+    margin: 20px auto 0 auto;
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+h3 { font-size: 16px; margin-bottom: 12px; color: #f1f5f9; }
+p { color: #94a3b8; margin-bottom: 12px; font-size: 15px; line-height: 1.6; }
+.section-desc { margin-bottom: 35px; font-style: italic; text-align: center; color: #94a3b8; }
+hr { margin: 40px 0; border: 0; border-top: 1px solid #334155; }
+
+/* profile picture */
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+/* About box stylecard */
+.info-block {
+    background-color: #1e293b;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.info-block p { margin-bottom: 6px; color: #f8fafc; }
+.bio-text { color: #cbd5e1; text-align: justify; }
+
+/* Skills detailed badges with responsive hover changes */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.skill-badge {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #334155;
+    transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3);
+}
+
+/*ung tatlong project column gamit pictures wrappers */
+.projects-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    flex: 1;
+    min-width: 230px;
+    max-width: 245px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 18px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.15);
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 140px;
+    background-color: #0f172a;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    border: 1px solid #334155;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-desc { font-size: 13.5px; color: #94a3b8; margin-bottom: 12px; min-height: 65px; }
+.tech-used { font-size: 12.5px; color: #38bdf8; font-weight: 500; }
+
+/* ung achievements and goals blck */
+.list-container {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+.list-item { margin-bottom: 12px; color: #cbd5e1; }
+.list-item:last-child { margin-bottom: 0; }
+
+/* ung contact form module layout configuration */
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.contact-details { flex: 1; min-width: 280px; }
+.social-title { margin-top: 20px; }
+.social-box { display: flex; gap: 10px; margin-top: 8px; }
+
+.social-btn {
+    text-decoration: none;
+    background-color: #1e293b;
+    color: #38bdf8;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #334155;
+    transition: all 0.2s ease;
+}
+
+.social-btn:hover { 
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+.form-container {
+    flex: 1;
+    min-width: 280px;
+    background-color: #1e293b;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.interactive-form { font-size: 14px; font-weight: 600; color: #cbd5e1; }
+.interactive-form input[type="text"],
+.interactive-form input[type="email"],
+.interactive-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: normal;
+    outline: none;
+}
+
+.interactive-form input:focus, 
+.interactive-form textarea:focus { border-color: #38bdf8; }
+
+.interactive-form input[type="submit"] {
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+}
+
+.interactive-form input[type="submit"]:hover { opacity: 0.9; }
